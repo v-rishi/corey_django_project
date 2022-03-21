@@ -6,7 +6,7 @@ from .models import Post
 def home(request):
     posts = Post.objects.all()
     context = {'posts': posts, 'title': 'Blog Home page'}
-    return render(request, 'blog/home.html',context)
+    return render(request, 'blog/home.html', context)
 
 
 def about(request):
